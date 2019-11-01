@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="Green Arrow Logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="Toggle Nav" class="menu" id="toggle-menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav" role="menubar">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="Click to exit mobile menu">
+                    </li>
+                    <li role="menuitem"><a href="#">Who We Are</a></li>
+                    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+                        <a href="#" class="no-hover">Financial Services</a>
+                        <ul class="dropdown .hidden-dropdown">
+                            <li role="menuitem"><a href="#">Financial Planning</a></li>
+                            <li role="menuitem"><a href="#">Retirement Planning</a></li>
+                            <li role="menuitem"><a href="#">Estate and Trust Planning</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+                        <a href="#" class="no-hover">Investment Products</a>
+
+                        <ul class="dropdown hidden-dropdown">
+                            <li role="menuitem"><a href="#">Stocks</a></li>
+                            <li role="menuitem"><a href="#">Bonds</a></li>
+                            <li role="menuitem"><a href="#">Mutual Funds</a></li>
+                            <li role="menuitem"><a href="#">ETFs</a></li>
+                            <li role="menuitem"><a href="#">CDs</a></li>
+                            <li role="menuitem"><a href="#">Roth IRAs</a></li>
+                            <li role="menuitem"><a href="#">401ks</a></li>
+                        </ul>
+                    </li>
+
+                    <li role="menuitem"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="/img/hero-img.svg" class="hero-img">
+            <h1>Financial planning made easy.</h1>
+            <p class="subhead">Plan for your future without leaving the couch.</p>
+            <span class="scroll hide-mobile show-desktop">&#8595;</span>
+        </section>
+    </div>
+
+    <div class="green-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/handshake-icon.png" alt="">
+                    <p>
+                        Our financial professionals understand that your goals are unique and always changing. They'll
+                        take care of the heavy lifting so you don't have to!
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/wayfinder-icon.png" alt="">
+                    <p>
+                        We offer a variety of planning services that can be personalized to fit your present and future
+                        financial priorities. No matter where you are in life, we have options just for you!
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/computer-icon.png" alt="">
+                    <p>
+                        You'll get access to our collection of online tools that let you make adjustments to your plan
+                        with ease!
+                    </p>
+                </li>
+            </ul>
+            <button class="cta">Browse Our Services</button>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/user1.png" alt="">
+                        <blockquote>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, laborum corporis sed
+                            pariatur
+                        </blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/user2.png" alt="">
+                        <blockquote>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, laborum corporis sed
+                            pariatur facere
+                        </blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Speak to a financial professional today!</h2>
+        <button class="get-started">Get Started</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="img/logo-white.png" alt="" class="logo">
+                </a>
+                <p class="address">Nashville, TN<br />USA</p>
+
+                <ul class="social-links">
+                    <li><a href="#">FB</a></li>
+                    <li><a href="#">TW</a></li>
+                    <li><a href="#">IG</a></li>
+                    <li><a href="#">LINKED</a></li>
+                </ul>
+
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+
+</html>
