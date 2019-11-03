@@ -17,32 +17,32 @@
 
             <nav>
                 <a href="#" class="hide-desktop">
-                    <img src="img/ham.svg" alt="Toggle Nav" class="menu" id="toggle-menu">
+                    <img src="img/ham.svg" alt="Toggle Nav" aria-expanded="false" class="menu" id="toggle-menu"
+                        aria-label="Toggle navigation menu">
                 </a>
 
                 <ul class="show-desktop hide-mobile" id="nav" role="menubar">
                     <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="Click to exit mobile menu">
                     </li>
                     <li role="menuitem"><a href="#">Who We Are</a></li>
-                    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+
+                    <li class="has-subnav" role="menuitem" aria-haspopup="true" data-subnav="financial-services">
                         <a href="#" class="no-hover">Financial Services</a>
-                        <ul class="dropdown .hidden-dropdown">
+                        <ul class="dropdown" id="financial-services">
                             <li role="menuitem"><a href="#">Financial Planning</a></li>
                             <li role="menuitem"><a href="#">Retirement Planning</a></li>
-                            <li role="menuitem"><a href="#">Estate and Trust Planning</a></li>
+                            <li role="menuitem"><a href="#">Estate Planning</a></li>
                         </ul>
                     </li>
-                    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+                    <li class="has-subnav" role="menuitem" aria-haspopup="true" data-subnav="investment-products">
                         <a href="#" class="no-hover">Investment Products</a>
-
-                        <ul class="dropdown hidden-dropdown">
+                        <ul class="dropdown" id="investment-products">
                             <li role="menuitem"><a href="#">Stocks</a></li>
                             <li role="menuitem"><a href="#">Bonds</a></li>
                             <li role="menuitem"><a href="#">Mutual Funds</a></li>
                             <li role="menuitem"><a href="#">ETFs</a></li>
-                            <li role="menuitem"><a href="#">CDs</a></li>
                             <li role="menuitem"><a href="#">Roth IRAs</a></li>
-                            <li role="menuitem"><a href="#">401ks</a></li>
+                            <li role="menuitem"><a href="#">401(K)s</a></li>
                         </ul>
                     </li>
 
@@ -50,11 +50,10 @@
                 </ul>
             </nav>
         </header>
-
         <section>
             <img src="/img/hero-img.svg" class="hero-img">
             <h1>Financial planning made easy.</h1>
-            <p class="subhead">Plan for your future without leaving the couch.</p>
+            <p class="subhead">Make your money work for you.</p>
             <span class="scroll hide-mobile show-desktop">&#8595;</span>
         </section>
     </div>
