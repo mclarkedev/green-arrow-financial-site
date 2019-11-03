@@ -1,7 +1,7 @@
 // Mobile nav menu to desktop functionality
-const menu = document.getElementById('toggle-menu')
-const nav = document.getElementById('nav')
-const exit = document.getElementById('exit')
+let menu = document.getElementById('toggle-menu');
+let nav = document.getElementById('nav');
+let exit = document.getElementById('exit');
 
 menu.addEventListener('click', (e) => {
     nav.classList.toggle('hide-mobile')
@@ -16,7 +16,6 @@ exit.addEventListener('click', (e) => {
 
 // Nav Dropdown
 const dropdownParents = document.querySelectorAll('.has-subnav');
-
 Array.from(dropdownParents).forEach((el) => {
 
     let navId = el.dataset.subnav;
@@ -24,12 +23,12 @@ Array.from(dropdownParents).forEach((el) => {
 
     let dropdownOpen = () => {
         dropdownId.style.display = "block"
-        el.firstElementChild.style.color = "#9D9D9D"
+        el.style.color = "#9D9D9D"
     }
 
     let dropdownClose = () => {
         dropdownId.style.display = "none"
-        el.firstElementChild.style.color = "black"
+        el.style.color = "black"
     }
 
     // Place dropdown under parent

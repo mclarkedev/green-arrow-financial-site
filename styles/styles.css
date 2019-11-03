@@ -394,7 +394,7 @@ ul.footer-links li a {
         position: absolute;
         top: 60px;
         will-change: transform;
-        transition-duration: .25;
+        transition-duration: 0.25;
         background: rgb(245, 245, 245);
         border-radius: 3px;
         box-shadow: 0 50px 100px -20px rgba(50,50,93,.25),
