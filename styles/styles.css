@@ -183,6 +183,11 @@ button.cta:hover {
     background-color: rgb(232, 153, 5);
 }
 
+.disclaimer {
+    text-align: left;
+    font-size: 1em;
+}
+
 .footer-container {
     width: 100%;
     background: #3D444A;
