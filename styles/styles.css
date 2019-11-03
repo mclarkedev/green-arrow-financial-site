@@ -20,6 +20,10 @@ nav ul li {
     padding: 1em 2em;
 }
 
+.no-hover {
+    color: white;
+}
+
 nav ul li:hover, nav ul li a:hover {
     background-color: rgb(65, 73, 78)
 }
@@ -37,6 +41,10 @@ nav ul li a {
     margin-top: -1.3em;
     text-align: right;
     padding: 0 1.4em;
+}
+
+.exit-btn:hover {
+    background-color: rgb(49, 55, 59);
 }
 
 .exit-btn img {
@@ -197,6 +205,16 @@ ul.social-links li, ul.footer-links li {
 ul.social-links li a {
     text-decoration: none;
     font-size: 20px;
+    color: #fff;
+    padding: 0 .25em;
+}
+
+ul.social-links li a:hover {
+    color: rgb(65, 73, 78);
+}
+
+ul.social-links li a img {
+    width: 30px;
 }
 
 ul.footer-links li a {
@@ -343,7 +361,11 @@ ul.footer-links li a {
 
     nav ul li a:hover:not(.no-hover) {
         background-color: inherit;
-        border-bottom: 3px solid #8dbe0d;
+        border-bottom: 3px solid #8dbe0d;;
+    }
+
+    .no-hover {
+        color: black;
     }
 
     .dropdown-active {
