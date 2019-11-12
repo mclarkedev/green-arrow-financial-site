@@ -15,9 +15,8 @@ exit.addEventListener('click', (e) => {
 })
 
 // Nav Dropdown
-const dropdownParents = document.querySelectorAll('.has-subnav');
+const dropdownParents = document.querySelectorAll('.subnav-parent-container');
 Array.from(dropdownParents).forEach((el) => {
-
     let navId = el.dataset.subnav;
     let dropdownId = document.getElementById(navId)
 
@@ -43,24 +42,25 @@ Array.from(dropdownParents).forEach((el) => {
 
     getNavCoords()
 
-    window.addEventListener('resize', (e) => {
-        getNavCoords()
-    })
+    let elLink = el.getElementsByClassName('has-subnav')[0];
+    let dropdownItems = document.querySelectorAll('.dropdown li a')
 
-    el.addEventListener('mouseover', (e) => {
-        dropdownOpen();
-    })
+    // Events
+    window.addEventListener('resize', getNavCoords);
 
-    el.addEventListener('focus', (e) => {
-        dropdownOpen();
-    })
+    el.addEventListener('mouseover', dropdownOpen);
 
-    el.addEventListener('mouseout', (e) => {
-        dropdownClose();
-    })
+    el.addEventListener('mouseout', dropdownClose)
 
-    el.addEventListener('focusout', (e) => {
-        dropdownClose();
-    })
-})
+    elLink.addEventListener('focus', dropdownOpen);
+
+    Array.from(dropdownItems).forEach((item) => {
+        item.addEventListener('focusout', (e) => {
+            console.log(e.relatedTarget)
+            if (!e.relatedTarget.hasAttribute('role')) {
+                dropdownClose();
+            }
+        })
+    });
+});
 
