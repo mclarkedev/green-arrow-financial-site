@@ -56,7 +56,7 @@ Array.from(dropdownParents).forEach((el) => {
 
     Array.from(dropdownItems).forEach((item) => {
         item.addEventListener('focusout', (e) => {
-            if (!e.relatedTarget.hasAttribute('role')) {
+            if (e.relatedTarget.hasAttribute('data-nav-item')) {
                 dropdownClose();
             }
         })
