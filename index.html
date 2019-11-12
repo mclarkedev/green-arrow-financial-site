@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+  <title>Home | Green Arrow Financial</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
@@ -23,9 +23,9 @@
         <ul class="show-desktop hide-mobile" id="nav" role="menubar">
           <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="Click to exit mobile menu" /></li>
 
-          <li role="presentation"><a href="#" role="menuitem">Who We Are</a></li>
+          <li role="presentation"><a href="#" role="menuitem" data-nav-item="no-subnav">Who We Are</a></li>
           <li class="subnav-parent-container" aria-haspopup="true" data-subnav="financial-services" role="presentation">
-            <a href="#" class="no-hover has-subnav" tabindex="0">Financial Services</a>
+            <a href="#" class="no-hover has-subnav" tabindex="0" data-nav-item="subnav">Financial Services</a>
             <ul class="dropdown" id="financial-services">
               <li role="presentation"><a href="#" role="menuitem" tabindex="0">Financial Planning</a></li>
               <li role="presentation"><a href="#" role="menuitem" tabindex="0">Retirement Planning</a></li>
@@ -34,7 +34,7 @@
           </li>
           <li class="subnav-parent-container" aria-haspopup="true" data-subnav="investment-products"
             role="presentation">
-            <a href="#" class="no-hover has-subnav" tabindex="0">Investment Products</a>
+            <a href="#" class="no-hover has-subnav" tabindex="0" data-nav-item="subnav">Investment Products</a>
             <ul class="dropdown" id="investment-products">
               <li role="presentation"><a href="#" role="menuitem" tabindex="0">Stocks</a></li>
               <li role="presentation"><a href="#" role="menuitem" tabindex="0">Bonds</a></li>
@@ -45,7 +45,7 @@
             </ul>
           </li>
 
-          <li role="presentation"><a href="#" role="menuitem">Contact</a></li>
+          <li role="presentation"><a href="#" role="menuitem" data-nav-item="no-subnav">Contact</a></li>
         </ul>
       </nav>
     </header>
